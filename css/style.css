@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
+}
+
+body>*{
+	display: block;
+}
+
+header, footer{
+	height: 50px;
+	background: lightgrey;
+}
+
+header span{
+	font-size: 40px;
+	display: inline-block;
+	width: 100%;
+	color: blue;
+	text-align: center;
+}
+
+footer{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+footer p{
+	display: inline;
+	margin: 10px;
+	line-height: 40px;
+}
+
+footer address{
+	margin: 10px;
+	float: right;
+}
+
+section{
+	margin: 50px auto 0 auto;
+	height: 100%;
+}
+
+#gamefield{
+	display: none;
+	height: 100%;
+	list-style: none;
+	text-align: center;
+	font-size: 0;
+}
+
+#gamefield.started{
+	display: block;
+}
+
+#gamefield li{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 45px;
+	height: 45px;
+	border: 1px solid;
+	cursor: pointer;
+	line-height: 48px;
+	font-size: 0;
+	overflow: hidden;
+	background: blue;
+	background-size: contain !important;
+}
+
+#gamefield li.active{
+	background: white;
+	font-size: 40px;
+	box-shadow: inset 2px 2px 4px grey;
+}
+
+#gamefield li.deactive{
+	background: white;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+#time{
+	margin-top: 20%;
+}
+
+#time b{
+	color: red;
+	font-weight: normal;
+}
+
+#time i{
+	color: yellow;
+	font-style: normal;
+}
